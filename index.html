@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tranquilidad | Estudio de Títulos y Blindaje Inmobiliario en Colombia</title>
+    <meta name="description" content="No firme promesa ni entregue dinero sin auditar el Certificado de Tradición y Libertad. Abogados especialistas en derecho inmobiliario le entregan un Dictamen Oficial en menos de 60 minutos.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Plus Jakarta Sans (Títulos y Botones) & Inter (Lectura Técnica) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        charcoal: {
+                            DEFAULT: '#2C2A29',
+                            dark: '#1E1D1C',
+                            light: '#454240',
+                        },
+                        bankyellow: {
+                            DEFAULT: '#FDDA24',
+                            hover: '#F5CE00',
+                            soft: '#FFFBEB',
+                        },
+                        bankgreen: {
+                            DEFAULT: '#00A86B',
+                            dark: '#008755',
+                            soft: '#ECFDF5',
+                        },
+                        ice: '#F7F8FA'
+                    },
+                    fontFamily: {
+                        display: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #F7F8FA;
+            color: #2C2A29;
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .bank-card {
+            background-color: #FFFFFF;
+            border: 1px solid #E5E7EB;
+            box-shadow: 0 4px 20px -2px rgba(44, 42, 41, 0.05);
+        }
+        .bank-btn-primary {
+            background-color: #FDDA24;
+            color: #2C2A29;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            transition: all 0.15s ease-in-out;
+        }
+        .bank-btn-primary:hover {
+            background-color: #F5CE00;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(253, 218, 36, 0.35);
+        }
+        .legal-document-sheet {
+            background: #FFFFFF;
+            border: 1px solid #D1D5DB;
+            border-top: 8px solid #2C2A29;
+            box-shadow: 0 12px 32px rgba(44, 42, 41, 0.08);
+        }
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #printable-dictamen, #printable-dictamen * {
+                visibility: visible;
+            }
+            #printable-dictamen {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                border: none !important;
+                box-shadow: none !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-bankyellow selection:text-charcoal">
+
+    <!-- 1. TOP BAR INSTITUCIONAL (#2C2A29) -->
+    <div class="bg-charcoal text-white text-xs py-2.5 px-4 border-b border-neutral-800 no-print">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-2.5">
+                <span class="inline-block w-2 h-2 rounded-full bg-bankyellow"></span>
+                <span class="font-semibold tracking-wide">Mesa de Auditoría Registral Inmobiliaria — Colombia</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-4 text-neutral-300">
+                <span>
+                    <i class="fa-regular fa-clock text-bankyellow mr-1.5"></i>
+                    Radicación Digital 24/7 | Despacho Jurídico: <strong class="text-white">Lun - Sáb 8:00 a.m. a 6:00 p.m.</strong>
+                </span>
+                <span class="hidden md:inline text-neutral-600">|</span>
+                <button onclick="openExpedienteChecker()" class="hover:text-bankyellow underline font-medium transition">
+                    <i class="fa-solid fa-magnifying-glass mr-1"></i>Verificar Estado de Expediente
+                </button>
+                <button onclick="openDirectWhatsApp('Hola, necesito asistencia con un estudio de títulos en mitranquilidad.co')" class="hidden sm:inline-flex items-center gap-1.5 text-bankyellow font-semibold hover:underline">
+                    <i class="fa-brands fa-whatsapp"></i> Soporte en Línea
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. HEADER BLANCO LIMPIO (STICKY) -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo Sobrio Mi Tranquilidad -->
+            <a href="#" class="flex items-center gap-3.5 group">
+                <div class="w-11 h-11 rounded-xl bg-charcoal flex items-center justify-center relative shadow-sm">
+                    <i class="fa-solid fa-shield-halved text-bankyellow text-xl"></i>
+                    <span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full bg-bankgreen border-2 border-white"></span>
+                </div>
+                <div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="font-heading text-xl sm:text-2xl font-extrabold text-charcoal tracking-tight">Mi Tranquilidad</span>
+                        <span class="text-[11px] font-extrabold px-1.5 py-0.5 rounded bg-bankyellow text-charcoal">.CO</span>
+                    </div>
+                    <p class="text-[11px] text-neutral-500 font-medium">Estudio de Títulos y Blindaje Inmobiliario</p>
+                </div>
+            </a>
+
+            <!-- Navegación Principal -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-charcoal">
+                <a href="#como-funciona" class="hover:text-neutral-600 transition">¿Cómo funciona?</a>
+                <a href="#tarifas" class="hover:text-neutral-600 transition">Tarifas Transparentes</a>
+                <a href="#dictamen-ejemplo" class="hover:text-neutral-600 transition flex items-center gap-1.5">
+                    <span>Ver Dictamen Real (Caso Medellín)</span>
+                    <span class="text-[10px] font-bold bg-bankgreen-soft text-bankgreen px-2 py-0.5 rounded-full border border-bankgreen/20">Ejemplo</span>
+                </a>
+            </nav>
+
+            <!-- Botón Primario Amarillo (#FDDA24) -->
+            <div class="flex items-center gap-3">
+                <a href="#ventanilla-radicacion" class="bank-btn-primary text-xs sm:text-sm px-5 py-3 rounded-xl inline-flex items-center gap-2 shadow-sm">
+                    <i class="fa-solid fa-file-shield"></i>
+                    <span>Radicar Certificado</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO SECTION ASIMÉTRICO (2 COLUMNAS SOBRE FONDO #F7F8FA) -->
+    <section class="py-10 lg:py-14 border-b border-gray-200 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+                
+                <!-- COLUMNA IZQUIERDA (5 Cols) -->
+                <div class="lg:col-span-5 pt-2 lg:sticky lg:top-28">
+                    <!-- Píldora sobria institucional -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-gray-300 text-charcoal text-xs font-semibold mb-6 shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-bankgreen"></span>
+                        <span>Verificación sobre folios de la Superintendencia de Notariado y Registro (SNR)</span>
+                    </div>
+
+                    <h1 class="font-heading text-3xl sm:text-4xl lg:text-[40px] font-extrabold text-charcoal leading-[1.18] tracking-tight mb-5">
+                        No firme promesa ni entregue dinero sin auditar el Certificado de Tradición.
+                    </h1>
+
+                    <p class="text-neutral-600 text-base leading-relaxed mb-8">
+                        Nuestros abogados especialistas en derecho inmobiliario revisan cada anotación de su inmueble (hipotecas, embargos, falsa tradición y cadena de propietarios) y le entregan un <strong class="text-charcoal font-semibold">Dictamen Jurídico con conclusiones concretas</strong> en menos de 60 minutos.
+                    </p>
+
+                    <!-- Lista de 3 Garantías con Checks Verdes (#00A86B) -->
+                    <div class="space-y-4 bg-white p-5 rounded-2xl border border-gray-200 mb-8 shadow-sm">
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-6 h-6 rounded-full bg-bankgreen-soft text-bankgreen flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-bold text-charcoal text-sm">Lectura cruzada de cancelaciones e hipotecas</h3>
+                                <p class="text-xs text-neutral-600 mt-0.5">Confirmamos si las hipotecas o medidas cautelares registradas en años anteriores ya fueron levantadas o siguen vigentes hoy.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-6 h-6 rounded-full bg-bankgreen-soft text-bankgreen flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-bold text-charcoal text-sm">Semáforo de viabilidad claro: Compre seguro o deténgase</h3>
+                                <p class="text-xs text-neutral-600 mt-0.5">Le indicamos con nombres y cédulas quiénes son los propietarios actuales que deben firmar la Promesa de Compraventa.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-6 h-6 rounded-full bg-bankgreen-soft text-bankgreen flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-heading font-bold text-charcoal text-sm">Pago seguro por PSE, Nequi o Transferencia Bancolombia</h3>
+                                <p class="text-xs text-neutral-600 mt-0.5">Tarifas transparentes desde $49.900 COP. Si aún no tiene el certificado PDF, nosotros lo descargamos directamente en la SNR.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mini Bloque de Confianza -->
+                    <div class="flex items-center justify-between px-2 text-xs text-neutral-500">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-user-shield text-charcoal text-sm"></i>
+                            <span>Firma Colombiana de Derecho Inmobiliario</span>
+                        </div>
+                        <a href="#dictamen-ejemplo" class="font-bold text-charcoal underline hover:text-neutral-700">Ver ejemplo de dictamen →</a>
+                    </div>
+                </div>
+
+                <!-- COLUMNA DERECHA: VENTANILLA DE RADICACIÓN DIGITAL (7 Cols) -->
+                <div id="ventanilla-radicacion" class="lg:col-span-7">
+                    <div class="bank-card rounded-2xl overflow-hidden">
+                        
+                        <!-- Barra Superior del Portal Transaccional -->
+                        <div class="bg-charcoal px-6 py-4 flex flex-wrap items-center justify-between gap-2">
+                            <div class="flex items-center gap-2.5">
+                                <span class="w-2.5 h-2.5 rounded-full bg-bankyellow"></span>
+                                <h2 class="font-heading text-white font-bold text-sm sm:text-base">
+                                    Ventanilla de Radicación Digital — Estudio de Títulos
+                                </h2>
+                            </div>
+                            <span id="radicado-badge" class="text-xs font-mono font-semibold bg-neutral-800 text-bankyellow px-3 py-1 rounded-lg border border-neutral-700">
+                                EXP: MT-2026-4810
+                            </span>
+                        </div>
+
+                        <div class="p-6 sm:p-8 space-y-6">
+                            
+                            <!-- PASO 1: SELECTOR DE PLAN MEDIANTE PESTAÑAS LIMPIAS -->
+                            <div>
+                                <div class="flex items-center justify-between mb-2.5">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-neutral-500">
+                                        1. Seleccione el tipo de inmueble a auditar
+                                    </label>
+                                    <span class="text-[11px] text-neutral-500">Entrega en PDF firmado: 45 a 60 min</span>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                                    <!-- Plan 1: 1 Matrícula -->
+                                    <button type="button" id="btn-plan-single" onclick="selectPlan('single')" class="text-left p-4 rounded-xl border-2 border-charcoal bg-ice transition relative">
+                                        <div class="flex justify-between items-center mb-1">
+                                            <span class="font-heading font-bold text-charcoal text-sm">Estudio 1 Matrícula</span>
+                                            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-charcoal text-white">Individual</span>
+                                        </div>
+                                        <p class="font-heading text-2xl font-extrabold text-charcoal my-1">$49.900 <span class="text-xs font-normal text-neutral-500">COP</span></p>
+                                        <p class="text-xs text-neutral-600">Para casa, lote o apartamento con un (1) solo folio de matrícula inmobiliaria.</p>
+                                    </button>
+
+                                    <!-- Plan 2: Combo Vivienda Completa -->
+                                    <button type="button" id="btn-plan-combo" onclick="selectPlan('combo')" class="text-left p-4 rounded-xl border-2 border-gray-200 hover:border-gray-300 bg-white transition relative">
+                                        <span class="absolute -top-2.5 right-3 bg-bankyellow text-charcoal text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full border border-charcoal/15 shadow-sm">
+                                            Más solicitado en P.H.
+                                        </span>
+                                        <div class="flex justify-between items-center mb-1">
+                                            <span class="font-heading font-bold text-charcoal text-sm">Combo Vivienda Completa</span>
+                                            <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-gray-100 text-charcoal">Hasta 3 Folios</span>
+                                        </div>
+                                        <p class="font-heading text-2xl font-extrabold text-charcoal my-1">$89.900 <span class="text-xs font-normal text-neutral-500">COP</span></p>
+                                        <p class="text-xs text-neutral-600">Audita <strong>Apartamento + Parqueadero + Cuarto Útil</strong> en un solo Dictamen Consolidado.</p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- INTERRUPTOR DESTACADO: ¿NO TIENE EL CERTIFICADO EN PDF? -->
+                            <div class="bg-ice border border-gray-300 rounded-xl p-4">
+                                <label class="flex items-start gap-3.5 cursor-pointer select-none">
+                                    <input type="checkbox" id="snr-download-toggle" onchange="toggleSnrDownload()" class="mt-1 w-5 h-5 rounded accent-charcoal border-gray-400 cursor-pointer">
+                                    <div class="flex-1">
+                                        <div class="flex flex-wrap items-center justify-between gap-2">
+                                            <span class="font-heading font-bold text-charcoal text-sm">
+                                                ¿No tiene el Certificado de Tradición en PDF?
+                                            </span>
+                                            <span class="text-xs font-extrabold bg-bankyellow text-charcoal px-2.5 py-0.5 rounded-md">
+                                                + $40.000 COP por matrícula
+                                            </span>
+                                        </div>
+                                        <p class="text-xs text-neutral-600 mt-1">
+                                            Marque esta casilla y nuestro equipo jurídico descargará el Certificado Oficial directamente de la <strong>Superintendencia de Notariado y Registro (SNR)</strong> con fecha y hora de hoy (incluye el valor del Pin oficial SNR).
+                                        </p>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <!-- ZONA A: SI EL USUARIO TIENE EL PDF -->
+                            <div id="pdf-upload-zone" class="space-y-3">
+                                <div class="flex flex-wrap items-center justify-between gap-2">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-neutral-500">
+                                        2. Adjunte su Certificado de Tradición y Libertad (PDF)
+                                    </label>
+                                    <button type="button" onclick="simulateInstantPdf()" class="text-xs font-bold text-charcoal bg-bankyellow/40 hover:bg-bankyellow px-2.5 py-1 rounded-md transition">
+                                        <i class="fa-solid fa-wand-magic-sparkles mr-1"></i>Simular carga de Certificado SNR
+                                    </button>
+                                </div>
+
+                                <div id="dropzone-box" onclick="document.getElementById('file-input').click()" class="border-2 border-dashed border-gray-300 hover:border-charcoal bg-ice rounded-xl p-6 text-center cursor-pointer transition">
+                                    <input type="file" id="file-input" accept=".pdf,image/*" multiple class="hidden" onchange="handleFileUpload(this.files)">
+                                    
+                                    <!-- Estado Inicial Vacío -->
+                                    <div id="dropzone-empty">
+                                        <div class="w-12 h-12 rounded-xl bg-white border border-gray-200 text-charcoal mx-auto flex items-center justify-center mb-3 shadow-sm">
+                                            <i class="fa-solid fa-file-arrow-up text-xl"></i>
+                                        </div>
+                                        <p class="font-heading text-sm font-bold text-charcoal">Seleccione o arrastre aquí el archivo PDF del Certificado</p>
+                                        <p id="dropzone-subtitle" class="text-xs text-neutral-500 mt-1">Aceptamos documentos emitidos por la SNR (digitales o escaneados legibles).</p>
+                                    </div>
+
+                                    <!-- Estado Validando (Estilo Sobrio Bancario) -->
+                                    <div id="precheck-loader" class="hidden py-2">
+                                        <div class="flex items-center justify-center gap-2.5 text-charcoal font-heading font-bold text-sm mb-2">
+                                            <i class="fa-solid fa-circle-notch fa-spin text-charcoal"></i>
+                                            <span id="precheck-status-text">Validando estructura registral del documento...</span>
+                                        </div>
+                                        <div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden max-w-md mx-auto">
+                                            <div id="precheck-bar" class="bg-charcoal h-full w-0 transition-all duration-300"></div>
+                                        </div>
+                                        <p class="text-[11px] text-neutral-500 mt-2">Verificación técnica previa a la asignación de abogado</p>
+                                    </div>
+
+                                    <!-- Estado Validado Sobrio -->
+                                    <div id="precheck-success" class="hidden text-left bg-white border border-gray-300 rounded-xl p-4 shadow-sm">
+                                        <div class="flex items-start justify-between gap-3">
+                                            <div class="flex items-start gap-3">
+                                                <div class="w-10 h-10 rounded-xl bg-bankgreen-soft text-bankgreen border border-bankgreen/30 flex items-center justify-center shrink-0 mt-0.5">
+                                                    <i class="fa-solid fa-check text-base"></i>
+                                                </div>
+                                                <div>
+                                                    <div class="flex flex-wrap items-center gap-2">
+                                                        <span class="text-[11px] font-extrabold uppercase tracking-wider bg-bankgreen-soft text-bankgreen px-2 py-0.5 rounded">
+                                                            Radicación Pre-Validada
+                                                        </span>
+                                                        <span id="detected-office" class="text-xs font-semibold text-neutral-500">
+                                                            ORIP Medellín Norte • Folio Activo
+                                                        </span>
+                                                    </div>
+                                                    <p id="uploaded-filenames" class="font-heading text-sm font-bold text-charcoal mt-1">
+                                                        certificado_01N-5392988.pdf
+                                                    </p>
+                                                    <p class="text-xs text-neutral-600 mt-0.5">
+                                                        Expediente asignado: <strong id="inline-exp-id" class="font-mono text-charcoal">MT-2026-4810</strong> — Listo para pago y despacho jurídico.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <button type="button" onclick="resetFileUpload(event)" class="text-xs text-neutral-500 hover:text-red-600 font-semibold px-2 py-1 border border-gray-200 rounded-lg">
+                                                Cambiar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ZONA B: SI EL USUARIO NO TIENE EL PDF (NOSOTROS LO DESCARGAMOS) -->
+                            <div id="snr-inputs-zone" class="hidden space-y-3 bg-ice p-4 rounded-xl border border-gray-300">
+                                <div class="flex flex-wrap items-center justify-between gap-2">
+                                    <label class="text-xs font-bold uppercase tracking-wider text-charcoal">
+                                        2. Datos del inmueble para descarga oficial en la SNR
+                                    </label>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-xs text-neutral-600 font-medium">Cantidad de matrículas:</span>
+                                        <select id="snr-qty-select" onchange="updateTotal()" class="text-xs font-bold bg-white border border-gray-300 rounded-lg px-2.5 py-1.5 text-charcoal outline-none">
+                                            <option value="1">1 Matrícula (+ $40.000)</option>
+                                            <option value="2">2 Matrículas (+ $80.000)</option>
+                                            <option value="3">3 Matrículas (+ $120.000)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <input type="text" id="snr-matricula-input" placeholder="Ej: Matrícula 01N-5392988 (Medellín) o Dirección exacta + Ciudad del inmueble" class="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 bg-white text-sm text-charcoal focus:border-charcoal outline-none">
+                                <p class="text-xs text-neutral-600">
+                                    <i class="fa-solid fa-circle-check text-bankgreen mr-1"></i> Le enviaremos a su WhatsApp tanto el <strong>Certificado de Tradición Oficial recién expedido por la SNR</strong> como nuestro <strong>Dictamen Jurídico completo</strong>.
+                                </p>
+                            </div>
+
+                            <!-- PASO 3: DATOS DEL SOLICITANTE -->
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-neutral-500 mb-3">
+                                    3. Datos del solicitante para entrega del Dictamen Firmado
+                                </label>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                                    <div>
+                                        <label class="block text-xs font-semibold text-charcoal mb-1">Nombre completo *</label>
+                                        <input type="text" id="client-name" placeholder="Ej: Juan Camilo Restrepo" class="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 bg-white text-sm text-charcoal focus:border-charcoal outline-none">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-semibold text-charcoal mb-1">Número de WhatsApp (Entrega de PDF) *</label>
+                                        <input type="tel" id="client-whatsapp" placeholder="Ej: 300 123 4567" class="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 bg-white text-sm text-charcoal focus:border-charcoal outline-none">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PASO 4: MÓDULO DE PAGO EN 2 PESTAÑAS CLARAS -->
+                            <div class="pt-4 border-t border-gray-200">
+                                <!-- Resumen del Total -->
+                                <div class="flex flex-wrap items-center justify-between gap-2 bg-ice p-4 rounded-xl border border-gray-200 mb-4">
+                                    <div>
+                                        <span class="text-[11px] font-bold uppercase tracking-wider text-neutral-500 block">Resumen de la solicitud</span>
+                                        <span id="summary-line" class="font-heading text-xs sm:text-sm font-bold text-charcoal">
+                                            Estudio 1 Matrícula — Cliente aporta PDF
+                                        </span>
+                                    </div>
+                                    <div class="text-right">
+                                        <span class="text-xs text-neutral-500 block">Valor total a pagar:</span>
+                                        <span id="total-price-display" class="font-heading text-2xl sm:text-3xl font-extrabold text-charcoal">$49.900 COP</span>
+                                    </div>
+                                </div>
+
+                                <!-- Selector de Pestañas de Pago (PSE vs Transferencia) -->
+                                <div class="grid grid-cols-2 gap-2 p-1 bg-gray-100 rounded-xl mb-4 border border-gray-200">
+                                    <button type="button" id="tab-pay-pse" onclick="switchPaymentTab('pse')" class="py-2.5 px-3 rounded-lg text-xs sm:text-sm font-heading font-bold bg-white text-charcoal shadow-sm transition flex items-center justify-center gap-2">
+                                        <i class="fa-solid fa-building-columns text-charcoal"></i>
+                                        <span>PSE / Pago en Línea</span>
+                                    </button>
+                                    <button type="button" id="tab-pay-transfer" onclick="switchPaymentTab('transfer')" class="py-2.5 px-3 rounded-lg text-xs sm:text-sm font-heading font-bold text-neutral-600 hover:text-charcoal transition flex items-center justify-center gap-2">
+                                        <i class="fa-solid fa-mobile-screen-button text-charcoal"></i>
+                                        <span>Transferencia Bancolombia / Nequi / QR</span>
+                                    </button>
+                                </div>
+
+                                <!-- PESTAÑA A: PSE / PAGO EN LÍNEA -->
+                                <div id="content-pay-pse" class="bg-white rounded-xl p-4 sm:p-5 border border-gray-200 space-y-4">
+                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                        <div>
+                                            <label class="block text-xs font-semibold text-charcoal mb-1">Entidad Bancaria (PSE Colombia)</label>
+                                            <select id="pse-bank" class="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 text-sm bg-white font-medium text-charcoal outline-none">
+                                                <option value="Bancolombia">Bancolombia</option>
+                                                <option value="Nequi">Nequi</option>
+                                                <option value="Davivienda">Banco Davivienda / Daviplata</option>
+                                                <option value="Banco de Bogotá">Banco de Bogotá</option>
+                                                <option value="BBVA Colombia">BBVA Colombia</option>
+                                                <option value="Scotiabank Colpatria">Scotiabank Colpatria</option>
+                                                <option value="Banco de Occidente">Banco de Occidente</option>
+                                                <option value="Nu Colombia / Lulo Bank">Nu Colombia / Lulo Bank</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label class="block text-xs font-semibold text-charcoal mb-1">Cédula o NIT del pagador</label>
+                                            <input type="text" id="pse-doc" placeholder="Número de documento" class="w-full px-3.5 py-2.5 rounded-xl border border-gray-300 text-sm bg-white outline-none">
+                                        </div>
+                                    </div>
+
+                                    <div class="flex flex-wrap items-center justify-between gap-2 text-xs text-neutral-600 bg-ice px-3.5 py-2.5 rounded-lg border border-gray-200">
+                                        <span><i class="fa-solid fa-lock text-charcoal mr-1.5"></i>Conexión segura con pasarela bancaria PSE</span>
+                                        <span class="font-semibold text-bankgreen">Confirmación inmediata</span>
+                                    </div>
+
+                                    <button type="button" onclick="triggerPseCheckout()" class="w-full py-4 px-6 rounded-xl bank-btn-primary text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-sm">
+                                        <i class="fa-solid fa-shield-check"></i>
+                                        <span id="pse-btn-text">Pagar por PSE y Radicar Estudio ($49.900 COP)</span>
+                                    </button>
+                                </div>
+
+                                <!-- PESTAÑA B: TRANSFERENCIA BANCOLOMBIA / NEQUI / QR -->
+                                <div id="content-pay-transfer" class="hidden bg-white rounded-xl p-4 sm:p-5 border border-gray-200 space-y-4">
+                                    <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 items-center">
+                                        <!-- Caja QR -->
+                                        <div class="sm:col-span-4 flex flex-col items-center justify-center bg-ice p-3 rounded-xl border border-gray-200">
+                                            <div class="w-28 h-28 bg-white rounded-lg p-2 border border-gray-300 flex items-center justify-center relative">
+                                                <svg viewBox="0 0 100 100" class="w-full h-full text-charcoal fill-current">
+                                                    <rect x="10" y="10" width="25" height="25" fill="none" stroke="currentColor" stroke-width="6"/>
+                                                    <rect x="17" y="17" width="11" height="11"/>
+                                                    <rect x="65" y="10" width="25" height="25" fill="none" stroke="currentColor" stroke-width="6"/>
+                                                    <rect x="72" y="17" width="11" height="11"/>
+                                                    <rect x="10" y="65" width="25" height="25" fill="none" stroke="currentColor" stroke-width="6"/>
+                                                    <rect x="17" y="72" width="11" height="11"/>
+                                                    <rect x="44" y="12" width="8" height="8"/>
+                                                    <rect x="44" y="28" width="8" height="16"/>
+                                                    <rect x="12" y="44" width="16" height="8"/>
+                                                    <rect x="36" y="44" width="24" height="8"/>
+                                                    <rect x="68" y="44" width="20" height="8"/>
+                                                    <rect x="44" y="60" width="12" height="12"/>
+                                                    <rect x="64" y="64" width="10" height="24"/>
+                                                    <rect x="80" y="72" width="10" height="16"/>
+                                                    <rect x="44" y="80" width="14" height="10"/>
+                                                </svg>
+                                                <span class="absolute inset-0 flex items-center justify-center">
+                                                    <span class="bg-bankyellow text-charcoal text-[9px] font-black px-1.5 py-0.5 rounded border border-charcoal">QR</span>
+                                                </span>
+                                            </div>
+                                            <span class="text-[11px] font-bold text-charcoal mt-2 text-center">App Bancolombia / Nequi</span>
+                                        </div>
+
+                                        <!-- Cuentas Bancarias Configurables -->
+                                        <div class="sm:col-span-8 space-y-2.5 text-xs sm:text-sm">
+                                            <div class="flex items-center justify-between bg-ice px-3.5 py-2.5 rounded-xl border border-gray-200">
+                                                <div>
+                                                    <span class="text-[11px] font-bold uppercase text-neutral-500 block">Cuenta Bancolombia</span>
+                                                    <span id="display-bancolombia" class="font-mono font-bold text-charcoal">Ahorros N° 000-000000-00</span>
+                                                </div>
+                                                <button type="button" onclick="copyText('display-bancolombia')" class="text-xs font-bold text-charcoal bg-white hover:bg-gray-100 px-3 py-1.5 rounded-lg border border-gray-300">
+                                                    <i class="fa-regular fa-copy mr-1"></i>Copiar
+                                                </button>
+                                            </div>
+
+                                            <div class="flex items-center justify-between bg-ice px-3.5 py-2.5 rounded-xl border border-gray-200">
+                                                <div>
+                                                    <span class="text-[11px] font-bold uppercase text-neutral-500 block">Nequi / Llave Bre-B</span>
+                                                    <span id="display-nequi" class="font-mono font-bold text-charcoal">300 000 0000</span>
+                                                </div>
+                                                <button type="button" onclick="copyText('display-nequi')" class="text-xs font-bold text-charcoal bg-white hover:bg-gray-100 px-3 py-1.5 rounded-lg border border-gray-300">
+                                                    <i class="fa-regular fa-copy mr-1"></i>Copiar
+                                                </button>
+                                            </div>
+
+                                            <p class="text-[11px] text-neutral-600 leading-relaxed">
+                                                Realice la transferencia por el valor exacto y presione el botón amarillo para enviar el comprobante y el PDF a nuestra mesa jurídica en WhatsApp.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" onclick="submitViaWhatsAppTransfer()" class="w-full py-4 px-6 rounded-xl bank-btn-primary text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-sm">
+                                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                                        <span>Ya transferí: Enviar Comprobante por WhatsApp</span>
+                                    </button>
+                                </div>
+
+                                <!-- Nota Legal Ley 1581 -->
+                                <p class="text-[11px] text-neutral-500 mt-3 text-center">
+                                    Al radicar acepta el tratamiento de datos (Ley 1581 de 2012) y los alcances de verificación sobre información pública registral de la SNR.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SECCIÓN: QUÉ REVISAN NUESTROS ABOGADOS EN SU CERTIFICADO -->
+    <section id="como-funciona" class="py-16 sm:py-20 bg-white border-b border-gray-200 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-12">
+                <span class="text-xs font-bold uppercase tracking-wider text-charcoal bg-bankyellow px-3 py-1 rounded-md">
+                    Auditoría Forense Inmobiliaria
+                </span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-charcoal mt-3 mb-3">
+                    Qué revisan nuestros abogados en su Certificado de Tradición
+                </h2>
+                <p class="text-neutral-600 text-sm sm:text-base">
+                    Un Certificado de Tradición y Libertad puede tener 5 o 40 anotaciones históricas. Nosotros cruzamos cada código registral para proteger su patrimonio en 4 frentes críticos:
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Tarjeta 1 -->
+                <div class="bank-card rounded-2xl p-6 border-t-4 border-t-charcoal">
+                    <div class="w-11 h-11 rounded-xl bg-ice border border-gray-200 text-charcoal flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-charcoal text-lg mb-2">1. Falsa Tradición y Sucesiones</h3>
+                    <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                        Verificamos que quien vende sea dueño del <strong>Dominio Pleno (X)</strong> y no de simples "derechos y acciones", posesiones sin título o sucesiones ilíquidas que ningún banco financia.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="bank-card rounded-2xl p-6 border-t-4 border-t-bankyellow">
+                    <div class="w-11 h-11 rounded-xl bg-ice border border-gray-200 text-charcoal flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-charcoal text-lg mb-2">2. Hipotecas Abiertas vs. Canceladas</h3>
+                    <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                        Cruzamos las hipotecas bancarias antiguas o en mayor extensión del constructor contra las escrituras posteriores de cancelación para confirmar que el inmueble esté libre de deuda.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="bank-card rounded-2xl p-6 border-t-4 border-t-charcoal">
+                    <div class="w-11 h-11 rounded-xl bg-ice border border-gray-200 text-charcoal flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-charcoal text-lg mb-2">3. Embargos, Demandas y Valorización</h3>
+                    <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                        Detectamos medidas cautelares vigentes por cobros ejecutivos, embargos de tránsito o impuestos municipales, demandas civiles inscritas o gravámenes de valorización.
+                    </p>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="bank-card rounded-2xl p-6 border-t-4 border-t-bankyellow">
+                    <div class="w-11 h-11 rounded-xl bg-ice border border-gray-200 text-charcoal flex items-center justify-center text-lg mb-4">
+                        <i class="fa-solid fa-house-lock"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-charcoal text-lg mb-2">4. Patrimonio de Familia y Afectación</h3>
+                    <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                        Identificamos limitaciones al dominio como Patrimonio de Familia Inembargable, Afectación a Vivienda Familiar o usufructos que bloquean la venta en Notaría.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECCIÓN INTERACTIVA: "CONOZCA NUESTRO ENTREGABLE: DICTAMEN JURÍDICO REAL" -->
+    <section id="dictamen-ejemplo" class="py-16 sm:py-20 bg-ice border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4 no-print">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-bankgreen bg-bankgreen-soft px-3 py-1 rounded-md border border-bankgreen/20">
+                        Ejemplo Real Verificado en Medellín
+                    </span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-charcoal mt-3">
+                        Conozca nuestro entregable: Dictamen Jurídico Real
+                    </h2>
+                    <p class="text-neutral-600 text-sm mt-1">
+                        Así de claro, estructurado y concreto es el documento oficial en PDF que usted recibe en su WhatsApp y correo electrónico.
+                    </p>
+                </div>
+                <div class="shrink-0">
+                    <button onclick="window.print()" class="inline-flex items-center gap-2 bg-charcoal hover:bg-charcoal-light text-white text-xs sm:text-sm font-heading font-bold px-5 py-3 rounded-xl shadow-sm transition">
+                        <i class="fa-solid fa-print text-bankyellow"></i>
+                        <span>Imprimir / Ver formato PDF</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- HOJA OFICIAL MEMBRETADA DE MI TRANQUILIDAD -->
+            <div id="printable-dictamen" class="legal-document-sheet rounded-2xl p-6 sm:p-10 lg:p-12 text-charcoal">
+                
+                <!-- Membrete Superior -->
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center pb-6 border-b border-gray-200 gap-4">
+                    <div class="flex items-center gap-3.5">
+                        <div class="w-12 h-12 rounded-xl bg-charcoal text-bankyellow flex items-center justify-center text-2xl shrink-0">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-heading text-xl sm:text-2xl font-extrabold text-charcoal tracking-tight">MI TRANQUILIDAD</h3>
+                            <p class="text-xs font-semibold uppercase tracking-wider text-neutral-500">
+                                Firma de Auditoría Registral y Estudio de Títulos • www.mitranquilidad.co
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-ice border border-gray-200 rounded-xl px-4 py-3 text-xs w-full sm:w-auto">
+                        <p class="font-heading font-bold text-charcoal">EXPEDIENTE: <span class="font-mono text-bankgreen">MT-2026-0001</span></p>
+                        <p class="text-neutral-600 mt-0.5">PIN SNR Auditado: <span class="font-mono">2505029865113454841</span></p>
+                        <p class="text-neutral-600">Matrícula: <strong class="text-charcoal">01N-5392988</strong> (ORIP Medellín Norte)</p>
+                    </div>
+                </div>
+
+                <!-- 1. Semáforo de Viabilidad Jurídica -->
+                <div class="my-6 bg-bankgreen-soft border border-bankgreen/40 rounded-2xl p-5 sm:p-6">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+                        <div class="flex items-center gap-2.5">
+                            <span class="w-3.5 h-3.5 rounded-full bg-bankgreen"></span>
+                            <span class="font-heading text-xs font-extrabold uppercase tracking-wider text-charcoal">
+                                RESULTADO DEL SEMÁFORO DE VIABILIDAD
+                            </span>
+                        </div>
+                        <span class="inline-flex items-center gap-1.5 text-xs font-heading font-extrabold bg-bankgreen text-white px-3.5 py-1 rounded-full">
+                            <i class="fa-solid fa-check-circle"></i> VIABLE CON OBSERVACIÓN DOCUMENTAL
+                        </span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-charcoal leading-relaxed">
+                        <strong>Conclusión Concreta de Nuestro Equipo Jurídico:</strong> La tradición del inmueble es <strong>100% sana y libre de gravámenes vigentes</strong>. No registra hipotecas activas, embargos, demandas civiles, patrimonio de familia ni afectación a vivienda familiar. No obstante, para proteger su compra advertimos dos puntos esenciales: <strong>(1)</strong> Este Certificado de Tradición (`01N-5392988`) corresponde <strong>exclusivamente al Parqueadero 02012 (área privada de 11.50 m²)</strong> de la Urbanización Almendra P.H.; si la negociación incluye un apartamento y cuarto útil, deben auditarse sus matrículas independientes. <strong>(2)</strong> El documento aportado fue expedido el <strong>2 de mayo de 2025</strong>, por lo que debe validarse un ejemplar del día antes de desembolsar dinero.
+                    </p>
+                </div>
+
+                <!-- 2. Identificación Técnica -->
+                <div class="mb-6">
+                    <h4 class="font-heading text-xs font-extrabold uppercase tracking-wider text-charcoal mb-3 flex items-center gap-2">
+                        <span class="w-5 h-5 rounded bg-bankyellow text-charcoal inline-flex items-center justify-center text-[11px]">1</span>
+                        IDENTIFICACIÓN REGISTRAL DEL INMUEBLE
+                    </h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 bg-ice p-4 rounded-xl border border-gray-200 text-xs">
+                        <div>
+                            <span class="text-neutral-500 block font-medium">Oficina de Registro y Folio:</span>
+                            <span class="font-bold text-charcoal">01N-5392988 (Medellín Norte) — ACTIVO</span>
+                        </div>
+                        <div>
+                            <span class="text-neutral-500 block font-medium">Dirección y Propiedad Horizontal:</span>
+                            <span class="font-bold text-charcoal">Calle 75 # 72B-110, Urb. Almendra P.H., Torre 1, Parq. 02012</span>
+                        </div>
+                        <div>
+                            <span class="text-neutral-500 block font-medium">Área, Coeficiente y Catastro:</span>
+                            <span class="font-bold text-charcoal">11.50 m² | Coef: 0.072% | CHIP: AAB0092URCA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Propietarios Actuales -->
+                <div class="mb-6">
+                    <h4 class="font-heading text-xs font-extrabold uppercase tracking-wider text-charcoal mb-3 flex items-center gap-2">
+                        <span class="w-5 h-5 rounded bg-bankyellow text-charcoal inline-flex items-center justify-center text-[11px]">2</span>
+                        TITULARES ACTUALES DEL DOMINIO (¿QUIÉNES DEBEN FIRMAR LA PROMESA?)
+                    </h4>
+                    <div class="overflow-x-auto border border-gray-200 rounded-xl">
+                        <table class="w-full text-left border-collapse text-xs">
+                            <thead>
+                                <tr class="bg-ice text-charcoal border-b border-gray-200">
+                                    <th class="py-3 px-4 font-heading font-bold">Propietario Actual (Anotación N° 004)</th>
+                                    <th class="py-3 px-4 font-heading font-bold">Cédula de Ciudadanía</th>
+                                    <th class="py-3 px-4 font-heading font-bold">Calidad Jurídica</th>
+                                    <th class="py-3 px-4 font-heading font-bold">¿Debe firmar Promesa y Escritura?</th>
+                                </tr>
+                            </thead>
+                            <tbody id="dictamen-owners-tbody" class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="py-3 px-4 font-bold text-charcoal">CARLOS ANDRÉS RESTREPO GÓMEZ</td>
+                                    <td class="py-3 px-4 font-mono">71.384.920</td>
+                                    <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-bankgreen-soft text-bankgreen font-bold">Titular Dominio Pleno (X)</span></td>
+                                    <td class="py-3 px-4 font-bold text-bankgreen">SÍ (Firma Obligatoria)</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4 font-bold text-charcoal">LAURA MARCELA RESTREPO GÓMEZ</td>
+                                    <td class="py-3 px-4 font-mono">1.037.614.285</td>
+                                    <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-bankgreen-soft text-bankgreen font-bold">Titular Dominio Pleno (X)</span></td>
+                                    <td class="py-3 px-4 font-bold text-bankgreen">SÍ (Firma Obligatoria)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p id="dictamen-acquisition-note" class="text-[11px] text-neutral-500 mt-2">
+                        * <strong>Modo de adquisición:</strong> Transferencia de dominio a título de beneficio en fiducia mercantil (Acción Sociedad Fiduciaria S.A. - Fideicomiso Almendra) mediante Escritura Pública N° 1171 del 20-03-2015 de la Notaría 25 de Medellín. El valor del acto ($176.374.486) especifica <em>"ESTE Y OTROS"</em>, confirmando que en esa misma escritura se transfirió el apartamento principal.
+                    </p>
+                </div>
+
+                <!-- 4. Cruce de Hipotecas y Gravámenes -->
+                <div class="mb-6">
+                    <h4 class="font-heading text-xs font-extrabold uppercase tracking-wider text-charcoal mb-3 flex items-center gap-2">
+                        <span class="w-5 h-5 rounded bg-bankyellow text-charcoal inline-flex items-center justify-center text-[11px]">3</span>
+                        CRUCE DE ANOTACIONES: HISTORIAL CANCELADO VS. ESTADO ACTUAL
+                    </h4>
+                    <div id="dictamen-cargas-list" class="space-y-2.5 text-xs">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-ice border border-gray-200 gap-2">
+                            <div>
+                                <span class="font-bold text-charcoal">Hipoteca Abierta sin Límite de Cuantía a favor de Bancolombia S.A. (Anotación N° 001):</span>
+                                <p class="text-neutral-600 mt-0.5">Fue constituida en 2013 por el fideicomiso constructor, pero se encuentra <strong>DEBIDAMENTE CANCELADA Y DESAFECTADA</strong> por voluntad de las partes en la <strong>Anotación N° 003</strong> (Escritura 1171 del 20-03-2015, Notaría 25 de Medellín).</p>
+                            </div>
+                            <span class="shrink-0 px-3 py-1 rounded-full bg-bankgreen-soft text-bankgreen font-bold text-[11px] border border-bankgreen/20">
+                                Cancelada / Sin Deuda
+                            </span>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-ice border border-gray-200 gap-2">
+                            <div>
+                                <span class="font-bold text-charcoal">Medidas Cautelares, Embargos, Patrimonio de Familia o Afectación Familiar:</span>
+                                <p class="text-neutral-600 mt-0.5">Auditadas las 5 anotaciones y la complementación histórica de más de 20 años sin ninguna limitación ni gravamen activo.</p>
+                            </div>
+                            <span class="shrink-0 px-3 py-1 rounded-full bg-bankgreen-soft text-bankgreen font-bold text-[11px] border border-bankgreen/20">
+                                100% Libre
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Recomendaciones Concretas -->
+                <div class="bg-charcoal text-white rounded-xl p-5">
+                    <h4 class="font-heading text-xs font-extrabold uppercase tracking-wider text-bankyellow mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-list-check"></i> 4. RECOMENDACIONES CONCRETAS ANTES DE FIRMAR PROMESA
+                    </h4>
+                    <ul id="dictamen-recommendations-list" class="list-disc list-inside space-y-1.5 text-xs text-neutral-200 leading-relaxed">
+                        <li><strong>Auditar la matrícula del Apartamento:</strong> Exigir el Certificado de Tradición del apartamento principal (que se desprende de la misma Escritura 1171 de 2015 de la Notaría 25 de Medellín).</li>
+                        <li><strong>Exigir firma de ambos hermanos/copropietarios:</strong> Tanto Carlos Andrés Restrepo Gómez como Laura Marcela Restrepo Gómez deben firmar la Promesa de Compraventa.</li>
+                        <li><strong>Actualizar el Certificado el día del negocio:</strong> Solicitar un ejemplar actualizado (o encargarnos su descarga en la SNR) para verificar que no existan registros posteriores al 2 de mayo de 2025.</li>
+                    </ul>
+                </div>
+
+                <!-- Pie de Firma Institucional para Impresión -->
+                <div class="mt-6 pt-4 border-t border-gray-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-[11px] text-neutral-500">
+                    <div>
+                        <strong class="text-charcoal">Dictamen emitido por el Departamento Jurídico Inmobiliario — Mi Tranquilidad (mitranquilidad.co)</strong>
+                        <span id="dictamen-client-footer" class="block">Verificación técnica basada en información pública de la Superintendencia de Notariado y Registro (SNR).</span>
+                    </div>
+                    <span id="dictamen-date-footer" class="font-mono text-charcoal font-semibold">Bogotá / Medellín, Colombia</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE TARIFAS TRANSPARENTES -->
+    <section id="tarifas" class="py-16 sm:py-20 bg-white border-b border-gray-200 no-print">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-bold uppercase tracking-wider text-charcoal bg-gray-100 px-3 py-1 rounded-md border border-gray-200">
+                    Honorarios Claros y Sin Sorpresas
+                </span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-charcoal mt-3 mb-3">
+                    Tarifas Transparentes
+                </h2>
+                <p class="text-neutral-600 text-sm sm:text-base">
+                    Proteja una inversión de cientos de millones de pesos por una fracción de lo que cuesta un concepto jurídico tradicional.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+                <!-- Tarifa 1 -->
+                <div class="bank-card rounded-2xl p-6 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold uppercase text-neutral-500">1 Matrícula Inmobiliaria</span>
+                        <h3 class="font-heading text-xl font-bold text-charcoal mt-1">Estudio Individual</h3>
+                        <p class="font-heading text-3xl font-extrabold text-charcoal my-4">$49.900 <span class="text-xs font-normal text-neutral-500">COP</span></p>
+                        <p class="text-xs text-neutral-600 mb-6">Para casa, lote o inmueble individual cuando usted ya cuenta con el archivo PDF del Certificado de Tradición.</p>
+                        <ul class="space-y-2.5 text-xs text-charcoal mb-6">
+                            <li><i class="fa-solid fa-check text-bankgreen mr-2"></i>Semáforo de viabilidad jurídica</li>
+                            <li><i class="fa-solid fa-check text-bankgreen mr-2"></i>Validación de propietarios actuales</li>
+                            <li><i class="fa-solid fa-check text-bankgreen mr-2"></i>Cruce de hipotecas y cancelaciones</li>
+                            <li><i class="fa-solid fa-check text-bankgreen mr-2"></i>Entrega en menos de 60 minutos</li>
+                        </ul>
+                    </div>
+                    <a href="#ventanilla-radicacion" onclick="selectPlan('single')" class="w-full py-3 rounded-xl bg-charcoal hover:bg-charcoal-light text-white font-heading font-bold text-xs sm:text-sm text-center transition">
+                        Radicar 1 Matrícula
+                    </a>
+                </div>
+
+                <!-- Tarifa 2 (Destacada) -->
+                <div class="bank-card rounded-2xl p-6 flex flex-col justify-between border-2 border-charcoal relative shadow-lg">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-bankyellow text-charcoal text-[11px] font-heading font-extrabold uppercase px-3.5 py-1 rounded-full border border-charcoal/20">
+                        Ideal para Apartamentos P.H.
+                    </span>
+                    <div>
+                        <span class="text-xs font-bold uppercase text-bankgreen">Hasta 3 Matrículas del Negocio</span>
+                        <h3 class="font-heading text-xl font-bold text-charcoal mt-1">Combo Vivienda Completa</h3>
+                        <p class="font-heading text-3xl font-extrabold text-charcoal my-4">$89.900 <span class="text-xs font-normal text-neutral-500">COP</span></p>
+                        <p class="text-xs text-neutral-600 mb-6">Incluye la auditoría conjunta de <strong>Apartamento + Parqueadero + Cuarto Útil</strong> en un solo Dictamen Consolidado.</p>
+                        <ul class="space-y-2.5 text-xs text-charcoal mb-6">
+                            <li><i class="fa-solid fa-check text-bankgreen mr-2"></i><strong>Revisión de hasta 3 Certificados PDF</strong></li>
+                            <li><i class="fa-solid fa-check text-bankgreen mr-2"></i>Verificación cruzada de dueños y linderos</li>
+                            <li><i class="fa-solid fa-check text-bankgreen mr-2"></i>Auditoría de hipotecas en mayor extensión</li>
+                            <li><i class="fa-solid fa-check text-bankgreen mr-2"></i>Cláusulas recomendadas para su Promesa</li>
+                        </ul>
+                    </div>
+                    <a href="#ventanilla-radicacion" onclick="selectPlan('combo')" class="w-full py-3.5 rounded-xl bank-btn-primary text-xs sm:text-sm text-center">
+                        Elegir Combo Vivienda Completa
+                    </a>
+                </div>
+
+                <!-- Tarifa 3 (Con Descarga SNR) -->
+                <div class="bank-card rounded-2xl p-6 flex flex-col justify-between bg-ice">
+                    <div>
+                        <span class="text-xs font-bold uppercase text-charcoal">Trámite Completo en SNR</span>
+                        <h3 class="font-heading text-xl font-bold text-charcoal mt-1">Descarga Oficial SNR</h3>
+                        <p class="font-heading text-3xl font-extrabold text-charcoal my-4">+ $40.000 <span class="text-xs font-normal text-neutral-500">COP / folio</span></p>
+                        <p class="text-xs text-neutral-600 mb-6">¿No tiene el PDF o su certificado es antiguo? Nosotros compramos el Pin y lo descargamos hoy mismo en la SNR.</p>
+                        <ul class="space-y-2.5 text-xs text-charcoal mb-6">
+                            <li><i class="fa-solid fa-check text-bankgreen mr-2"></i>Incluye el costo oficial del certificado SNR</li>
+                            <li><i class="fa-solid fa-check text-bankgreen mr-2"></i>Solo nos indica matrícula o dirección</li>
+                            <li><i class="fa-solid fa-check text-bankgreen mr-2"></i>Recibe el Certificado SNR + el Dictamen</li>
+                            <li><i class="fa-solid fa-check text-bankgreen mr-2"></i>Soporte directo por WhatsApp</li>
+                        </ul>
+                    </div>
+                    <a href="#ventanilla-radicacion" onclick="activateSnrPlan()" class="w-full py-3 rounded-xl bg-white hover:bg-gray-100 text-charcoal border border-charcoal font-heading font-bold text-xs sm:text-sm text-center transition">
+                        Solicitar con Descarga SNR
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER INSTITUCIONAL + CANDADO DE CONFIGURACIÓN SOCIO -->
+    <footer class="bg-charcoal text-neutral-400 py-12 text-xs no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2 space-y-3">
+                    <div class="flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-lg bg-bankyellow flex items-center justify-center text-charcoal">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span class="font-heading text-lg font-extrabold text-white">Mi Tranquilidad • mitranquilidad.co</span>
+                    </div>
+                    <p class="text-neutral-400 max-w-md leading-relaxed">
+                        Firma especializada en estudio de títulos, verificación registral ante la Superintendencia de Notariado y Registro (SNR) y estructuración de Promesas de Compraventa en toda Colombia.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-white uppercase tracking-wider mb-3">Canales de Atención</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#ventanilla-radicacion" class="hover:text-bankyellow transition">Ventanilla Digital 24/7</a></li>
+                        <li><a href="javascript:void(0)" onclick="openDirectWhatsApp('Quiero cotizar la elaboración de una Promesa de Compraventa')" class="hover:text-bankyellow transition">Elaboración de Promesa de Compraventa</a></li>
+                        <li><a href="javascript:void(0)" onclick="openExpedienteChecker()" class="hover:text-bankyellow transition">Consultar Expediente</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading font-bold text-white uppercase tracking-wider mb-3">Marco Normativo</h4>
+                    <p class="text-[11px] text-neutral-400 leading-relaxed">
+                        Los dictámenes jurídicos se emiten sobre la información pública inscrita en el folio de matrícula inmobiliaria (Ley 1579 de 2012 - Estatuto de Registro de Instrumentos Públicos). Protección de datos conforme a la Ley 1581 de 2012.
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-6 border-t border-neutral-800 flex flex-wrap justify-between items-center gap-4">
+                <p>© 2026 Mi Tranquilidad (mitranquilidad.co) — Colombia.</p>
+                <button onclick="togglePartnerModal()" class="text-neutral-500 hover:text-bankyellow transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-lock text-[10px]"></i>
+                    <span>Configuración Socio</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 6. BOTÓN FLOTANTE DE WHATSAPP ABAJO A LA DERECHA -->
+    <button onclick="openDirectWhatsApp('Hola, estoy en mitranquilidad.co y quiero realizar un estudio de títulos')" class="fixed bottom-5 right-5 z-50 bg-charcoal hover:bg-charcoal-light text-white rounded-full pl-4 pr-5 py-3.5 shadow-xl border-2 border-bankyellow flex items-center gap-2.5 transition no-print">
+        <span class="w-8 h-8 rounded-full bg-bankgreen text-white flex items-center justify-center text-lg">
+            <i class="fa-brands fa-whatsapp"></i>
+        </span>
+        <div class="text-left">
+            <span class="block text-[10px] text-bankyellow font-bold uppercase leading-none">Atención Jurídica</span>
+            <span class="font-heading font-bold text-xs">WhatsApp Directo</span>
+        </div>
+    </button>
+
+    <!-- MODAL INFORMATIVO / VERIFICADOR DE EXPEDIENTE (Sin alert()) -->
+    <div id="custom-modal" class="fixed inset-0 z-50 hidden bg-charcoal/70 backdrop-blur-sm flex items-center justify-center p-4 no-print">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-gray-200">
+            <div class="flex items-center gap-3 mb-3">
+                <div class="w-10 h-10 rounded-xl bg-bankyellow text-charcoal flex items-center justify-center text-lg shrink-0">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 id="modal-title" class="font-heading font-bold text-charcoal text-base">Información de Radicación</h3>
+            </div>
+            <p id="modal-body" class="text-xs sm:text-sm text-neutral-600 leading-relaxed mb-6"></p>
+            <div class="flex justify-end gap-2">
+                <button onclick="closeCustomModal()" class="px-4 py-2.5 rounded-xl bg-gray-100 hover:bg-gray-200 text-charcoal font-heading font-bold text-xs">
+                    Cerrar
+                </button>
+                <button id="modal-action-btn" class="hidden px-4 py-2.5 rounded-xl bank-btn-primary text-xs">
+                    Continuar en WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL OCULTO DE CONFIGURACIÓN SOCIO — CAMINO B (3 PESTAÑAS COMPLETAS) -->
+    <div id="partner-modal" class="fixed inset-0 z-50 hidden bg-charcoal/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 no-print overflow-y-auto">
+        <div class="bg-white rounded-2xl max-w-4xl w-full p-5 sm:p-7 shadow-2xl border border-gray-200 my-auto max-h-[92vh] flex flex-col">
+            
+            <!-- Encabezado del Modal Socio -->
+            <div class="flex justify-between items-center pb-4 border-b border-gray-200 shrink-0">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-charcoal text-bankyellow flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-user-secret"></i>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-bankgreen bg-bankgreen-soft px-2 py-0.5 rounded">
+                            Camino B • Backoffice Privado del Socio
+                        </span>
+                        <h3 class="font-heading font-extrabold text-charcoal text-base sm:text-lg mt-0.5">
+                            Centro de Operaciones y Motor Legal — mitranquilidad.co
+                        </h3>
+                    </div>
+                </div>
+                <button onclick="togglePartnerModal()" class="w-8 h-8 rounded-lg bg-gray-100 hover:bg-gray-200 text-charcoal flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Navegación de 3 Pestañas del Socio -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 p-1.5 bg-ice rounded-xl my-4 border border-gray-200 shrink-0">
+                <button type="button" id="partner-tab-btn-1" onclick="switchPartnerTab(1)" class="py-2.5 px-3 rounded-lg text-xs font-heading font-bold bg-charcoal text-bankyellow shadow-sm transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>1. Generador de Dictámenes</span>
+                </button>
+                <button type="button" id="partner-tab-btn-2" onclick="switchPartnerTab(2)" class="py-2.5 px-3 rounded-lg text-xs font-heading font-bold text-charcoal hover:bg-white transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-sliders"></i>
+                    <span>2. Pagos, WhatsApp y Llaves</span>
+                </button>
+                <button type="button" id="partner-tab-btn-3" onclick="switchPartnerTab(3)" class="py-2.5 px-3 rounded-lg text-xs font-heading font-bold text-charcoal hover:bg-white transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-cloud"></i>
+                    <span>3. Código Cloudflare Worker</span>
+                </button>
+            </div>
+
+            <!-- CONTENIDO SCROLLABLE DE LAS 3 PESTAÑAS -->
+            <div class="overflow-y-auto pr-1 space-y-4 flex-1">
+
+                <!-- ========================================================= -->
+                <!-- PESTAÑA 1: GENERADOR DE DICTÁMENES (MOTOR LEGAL EN VIVO)  -->
+                <!-- ========================================================= -->
+                <div id="partner-tab-content-1" class="space-y-4">
+                    <div class="bg-ice border border-gray-200 rounded-xl p-4 text-xs">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                            <span class="font-heading font-bold text-charcoal text-sm">
+                                <i class="fa-solid fa-scale-balanced text-charcoal mr-1.5"></i>Auditar Certificado de Tradición del Cliente
+                            </span>
+                            <span class="text-[11px] text-neutral-500">
+                                Inyecta el resultado directamente en el formato oficial membretado de Mi Tranquilidad
+                            </span>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-3">
+                            <div>
+                                <label class="font-bold text-charcoal block mb-1">N° Expediente Oficial</label>
+                                <input type="text" id="motor-exp-id" value="MT-2026-0842" class="w-full px-3 py-2 rounded-lg border border-gray-300 bg-white font-mono text-xs">
+                            </div>
+                            <div>
+                                <label class="font-bold text-charcoal block mb-1">Nombre del Cliente Solicitante</label>
+                                <input type="text" id="motor-client-name" placeholder="Ej: Andrés Felipe Mejía" class="w-full px-3 py-2 rounded-lg border border-gray-300 bg-white text-xs">
+                            </div>
+                            <div>
+                                <label class="font-bold text-charcoal block mb-1">Modo de Conexión del Motor</label>
+                                <select id="motor-connection-mode" class="w-full px-3 py-2 rounded-lg border border-gray-300 bg-white font-semibold text-charcoal text-xs">
+                                    <option value="direct">Conexión Directa Gemini (Pruebas / Socio)</option>
+                                    <option value="worker">Cloudflare Worker (Producción Oculta)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Subida de PDF(s) del Cliente para el Socio -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
+                            <div onclick="document.getElementById('motor-pdf-input').click()" class="border-2 border-dashed border-gray-300 hover:border-charcoal bg-white rounded-xl p-4 text-center cursor-pointer transition flex flex-col items-center justify-center">
+                                <input type="file" id="motor-pdf-input" accept=".pdf,image/*" multiple class="hidden" onchange="handleMotorFiles(this.files)">
+                                <i class="fa-solid fa-file-pdf text-2xl text-charcoal mb-1.5"></i>
+                                <p id="motor-file-label" class="font-heading font-bold text-charcoal text-xs">
+                                    Subir PDF(s) del Certificado de Tradición (SNR)
+                                </p>
+                                <p class="text-[11px] text-neutral-500 mt-0.5">Soporta 1 o hasta 3 PDFs (Apto + Parqueadero + Útil)</p>
+                            </div>
+
+                            <div>
+                                <label class="font-bold text-charcoal block mb-1">O pegar texto / notas adicionales del negocio (Opcional):</label>
+                                <textarea id="motor-extra-text" rows="3" placeholder="Si desea agregar contexto (ej: 'El comprador va a pedir crédito hipotecario con Bancolombia' o pegar el texto del CTL)..." class="w-full px-3 py-2 rounded-xl border border-gray-300 bg-white text-xs"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Estado de Procesamiento del Motor -->
+                        <div id="motor-status-box" class="hidden bg-white border border-gray-300 rounded-xl p-3.5 mb-3">
+                            <div class="flex items-center gap-2.5 text-charcoal font-heading font-bold text-xs">
+                                <i id="motor-spinner" class="fa-solid fa-circle-notch fa-spin text-charcoal"></i>
+                                <span id="motor-status-msg">Analizando tradición, cancelaciones e hipotecas en el documento...</span>
+                            </div>
+                        </div>
+
+                        <!-- Botones de Acción del Socio -->
+                        <div class="flex flex-wrap items-center justify-between gap-2 pt-2">
+                            <div class="flex items-center gap-2">
+                                <button type="button" onclick="enableDictamenManualEdit()" class="px-3.5 py-2.5 rounded-xl bg-white hover:bg-gray-100 text-charcoal border border-gray-300 font-heading font-bold text-xs transition">
+                                    <i class="fa-solid fa-pen-to-square mr-1"></i>Activar Edición Manual en Hoja
+                                </button>
+                                <button type="button" onclick="printGeneratedDictamen()" class="px-3.5 py-2.5 rounded-xl bg-charcoal hover:bg-charcoal-light text-white font-heading font-bold text-xs transition">
+                                    <i class="fa-solid fa-file-export text-bankyellow mr-1"></i>Imprimir / Guardar PDF Oficial
+                                </button>
+                            </div>
+
+                            <button type="button" id="btn-run-audit" onclick="executePartnerAudit()" class="px-5 py-3 rounded-xl bank-btn-primary text-xs sm:text-sm flex items-center gap-2 shadow-sm">
+                                <i class="fa-solid fa-gavel"></i>
+                                <span>Ejecutar Auditoría Jurídica y Generar Dictamen Oficial</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========================================================= -->
+                <!-- PESTAÑA 2: CONFIGURACIÓN DE PAGOS, WHATSAPP Y CLOUDFLARE  -->
+                <!-- ========================================================= -->
+                <div id="partner-tab-content-2" class="hidden space-y-4 text-xs">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                        <div>
+                            <label class="font-bold text-charcoal block mb-1">WhatsApp Receptor de Pedidos (con 57):</label>
+                            <input type="text" id="cfg-whatsapp" value="573000000000" class="w-full px-3.5 py-2 rounded-xl border border-gray-300 font-mono">
+                        </div>
+                        <div>
+                            <label class="font-bold text-charcoal block mb-1">Cuenta Bancolombia para Transferencias:</label>
+                            <input type="text" id="cfg-bancolombia" value="Ahorros N° 000-000000-00" class="w-full px-3.5 py-2 rounded-xl border border-gray-300 font-mono">
+                        </div>
+                        <div>
+                            <label class="font-bold text-charcoal block mb-1">Número Nequi / Llave Bre-B:</label>
+                            <input type="text" id="cfg-nequi" value="300 000 0000" class="w-full px-3.5 py-2 rounded-xl border border-gray-300 font-mono">
+                        </div>
+                        <div>
+                            <label class="font-bold text-charcoal block mb-1">Link de Pago PSE (Wompi / Bold):</label>
+                            <input type="url" id="cfg-pse-link" placeholder="https://checkout.wompi.co/l/..." class="w-full px-3.5 py-2 rounded-xl border border-gray-300 font-mono">
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-4">
+                        <h4 class="font-heading font-bold text-charcoal text-xs uppercase tracking-wider mb-3">
+                            Conexión Cloudflare Worker (Camino B) y Llave de Pruebas
+                        </h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+                            <div>
+                                <label class="font-bold text-charcoal block mb-1">URL de tu Cloudflare Worker:</label>
+                                <input type="url" id="cfg-worker-url" placeholder="https://motor-legal.tudominio.workers.dev" class="w-full px-3.5 py-2 rounded-xl border border-gray-300 font-mono">
+                            </div>
+                            <div>
+                                <label class="font-bold text-charcoal block mb-1">Clave Secreta del Socio (Header Auth):</label>
+                                <input type="password" id="cfg-partner-secret" value="SOCIO-MT-2026" class="w-full px-3.5 py-2 rounded-xl border border-gray-300 font-mono">
+                            </div>
+                            <div>
+                                <label class="font-bold text-charcoal block mb-1">Gemini API Key (Para Pruebas Directas):</label>
+                                <input type="password" id="cfg-gemini-key" placeholder="AIzaSy... (Opcional en local)" class="w-full px-3.5 py-2 rounded-xl border border-gray-300 font-mono">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-end pt-2">
+                        <button type="button" onclick="savePartnerConfig()" class="px-5 py-2.5 rounded-xl bank-btn-primary text-xs">
+                            <i class="fa-solid fa-floppy-disk mr-1.5"></i>Guardar Toda la Configuración
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ========================================================= -->
+                <!-- PESTAÑA 3: CÓDIGO CLOUDFLARE WORKER (COPIAR Y PEGAR)      -->
+                <!-- ========================================================= -->
+                <div id="partner-tab-content-3" class="hidden space-y-3 text-xs">
+                    <div class="bg-ice border border-gray-200 rounded-xl p-4">
+                        <h4 class="font-heading font-bold text-charcoal text-sm mb-2">
+                            Guía Rápida en 4 Pasos para Activar tu Cerebro Oculto en Cloudflare:
+                        </h4>
+                        <ol class="list-decimal list-inside space-y-1 text-neutral-600">
+                            <li>En tu cuenta de Cloudflare ve al menú lateral <strong>Workers & Pages</strong> → haz clic en <strong>Create Worker</strong> y ponle de nombre <code>motor-mitranquilidad</code>.</li>
+                            <li>Haz clic en <strong>Edit Code</strong>, borra el código de ejemplo, pega el código de abajo y dale a <strong>Deploy</strong>.</li>
+                            <li>En ese Worker ve a <strong>Settings → Variables and Secrets</strong> y agrega dos variables: <code>GEMINI_API_KEY</code> (tu llave gratuita de Google AI Studio) y <code>PARTNER_SECRET</code> (ej. <code>SOCIO-MT-2026</code>).</li>
+                            <li>Pega la URL de tu Worker en la <strong>Pestaña 2</strong> de este panel. ¡Listo! Nadie en internet podrá ver jamás que usas IA ni leer tu Prompt Maestro.</li>
+                        </ol>
+                    </div>
+
+                    <div class="relative">
+                        <div class="flex items-center justify-between bg-charcoal text-white px-4 py-2 rounded-t-xl">
+                            <span class="font-mono text-[11px] text-bankyellow">worker.js — Cloudflare Worker (Motor Jurídico Invisible)</span>
+                            <button type="button" onclick="copyWorkerCode()" class="bg-bankyellow text-charcoal font-heading font-bold text-[11px] px-3 py-1 rounded-lg hover:bg-bankyellow-hover transition">
+                                <i class="fa-regular fa-copy mr-1"></i>Copiar Código del Worker
+                            </button>
+                        </div>
+                        <pre id="cloudflare-worker-code" class="bg-neutral-900 text-neutral-200 p-4 rounded-b-xl overflow-x-auto font-mono text-[11px] leading-relaxed max-h-60">export default {
+  async fetch(request, env) {
+    const corsHeaders = {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, X-Partner-Secret"
+    };
+
+    if (request.method === "OPTIONS") {
+      return new Response(null, { headers: corsHeaders });
+    }
+
+    // 1. Verificar clave privada del socio
+    const secret = request.headers.get("X-Partner-Secret");
+    if (env.PARTNER_SECRET && secret !== env.PARTNER_SECRET) {
+      return new Response(JSON.stringify({ error: "No autorizado" }), {
+        status: 401,
+        headers: { ...corsHeaders, "Content-Type": "application/json" }
+      });
+    }
+
+    try {
+      const body = await request.json();
+      const parts = [{ text: body.prompt }];
+
+      if (Array.isArray(body.files)) {
+        for (const f of body.files) {
+          parts.push({
+            inlineData: { mimeType: f.mimeType, data: f.base64 }
+          });
+        }
+      }
+
+      const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${env.GEMINI_API_KEY}`;
+      const res = await fetch(apiUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ role: "user", parts }],
+          systemInstruction: { parts: [{ text: body.systemPrompt }] },
+          generationConfig: { responseMimeType: "application/json" }
+        })
+      });
+
+      const data = await res.json();
+      const jsonText = data?.candidates?.[0]?.content?.parts?.[0]?.text || "{}";
+      return new Response(jsonText, {
+        headers: { ...corsHeaders, "Content-Type": "application/json" }
+      });
+    } catch (err) {
+      return new Response(JSON.stringify({ error: err.message }), {
+        status: 500,
+        headers: { ...corsHeaders, "Content-Type": "application/json" }
+      });
+    }
+  }
+};</pre>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- LÓGICA DE LA APLICACIÓN -->
+    <script>
+        const apiKey = ""; // En entorno Canvas se inyecta automáticamente; o el socio puede usar su Worker / API Key
+        const state = {
+            plan: 'single', // 'single' ($49.900) o 'combo' ($89.900)
+            basePrice: 49900,
+            snrDownload: false,
+            snrQty: 1,
+            snrUnitCost: 40000,
+            radicadoId: 'MT-2026-' + Math.floor(1000 + Math.random() * 9000),
+            uploadedFiles: [],
+            whatsappNumber: '573000000000',
+            pseLink: '',
+            workerUrl: '',
+            partnerSecret: 'SOCIO-MT-2026',
+            geminiKey: '',
+            motorFiles: []
+        };
+
+        const MASTER_LEGAL_SYSTEM_PROMPT = `Actúas como el Director Jurídico de Derecho Inmobiliario y Urbanístico en Colombia de la firma "Mi Tranquilidad (mitranquilidad.co)".
+Tu misión es auditar el Certificado de Tradición y Libertad (CTL) de la Superintendencia de Notariado y Registro (SNR) y devolver EXCLUSIVAMENTE un objeto JSON válido con la siguiente estructura exacta:
+{
+  "expediente": "string",
+  "pinSnr": "string",
+  "matricula": "string (ej. 01N-5392988 (ORIP Medellín Norte) — ACTIVO)",
+  "direccion": "string",
+  "areaCoeficienteCatastro": "string",
+  "semaforoColor": "VERDE | AMARILLO | ROJO",
+  "semaforoTitulo": "string (ej. VIABLE CON OBSERVACIÓN DOCUMENTAL | COMPRA SEGURA | ALTO RIESGO - NO VIABLE)",
+  "conclusionEjecutiva": "string (Párrafo claro, contundente, sin mencionar jamás inteligencia artificial, advirtiendo si el folio es solo un parqueadero/depósito, fecha de expedición del certificado y estado real de gravámenes)",
+  "propietarios": [
+    {
+      "nombre": "NOMBRE COMPLETO EN MAYÚSCULAS",
+      "documento": "C.C. / NIT",
+      "calidad": "Titular Dominio Pleno (X) / Falsa Tradición / Nuda Propiedad",
+      "debeFirmar": "SÍ (Firma Obligatoria)"
+    }
+  ],
+  "notaAdquisicion": "string (Explicación del título de adquisición, notaría, escritura y si incluye 'ESTE Y OTROS')",
+  "cargas": [
+    {
+      "titulo": "string (ej. Hipoteca Abierta a favor de Bancolombia - Anotación N° 001)",
+      "detalle": "string (Explicando si está cancelada en qué anotación y escritura, o si sigue vigente)",
+      "estado": "Cancelada / Sin Deuda | 100% Libre | VIGENTE - ALERTA"
+    }
+  ],
+  "recomendaciones": [
+    "string (Recomendación contractual 1)",
+    "string (Recomendación contractual 2)",
+    "string (Recomendación contractual 3)"
+  ]
+}`;
+
+        // Inicializar expediente y configuración guardada
+        window.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('radicado-badge').textContent = 'EXP: ' + state.radicadoId;
+            document.getElementById('inline-exp-id').textContent = state.radicadoId;
+            document.getElementById('motor-exp-id').value = state.radicadoId;
+
+            const savedWa = localStorage.getItem('mt_wa');
+            const savedBanco = localStorage.getItem('mt_banco');
+            const savedNequi = localStorage.getItem('mt_nequi');
+            const savedPse = localStorage.getItem('mt_pse');
+            const savedWorker = localStorage.getItem('mt_worker_url');
+            const savedSecret = localStorage.getItem('mt_partner_secret');
+            const savedGeminiKey = localStorage.getItem('mt_gemini_key');
+
+            if (savedWa) {
+                state.whatsappNumber = savedWa;
+                document.getElementById('cfg-whatsapp').value = savedWa;
+            }
+            if (savedBanco) {
+                document.getElementById('display-bancolombia').textContent = savedBanco;
+                document.getElementById('cfg-bancolombia').value = savedBanco;
+            }
+            if (savedNequi) {
+                document.getElementById('display-nequi').textContent = savedNequi;
+                document.getElementById('cfg-nequi').value = savedNequi;
+            }
+            if (savedPse) {
+                state.pseLink = savedPse;
+                document.getElementById('cfg-pse-link').value = savedPse;
+            }
+            if (savedWorker) {
+                state.workerUrl = savedWorker;
+                document.getElementById('cfg-worker-url').value = savedWorker;
+                document.getElementById('motor-connection-mode').value = 'worker';
+            }
+            if (savedSecret) {
+                state.partnerSecret = savedSecret;
+                document.getElementById('cfg-partner-secret').value = savedSecret;
+            }
+            if (savedGeminiKey) {
+                state.geminiKey = savedGeminiKey;
+                document.getElementById('cfg-gemini-key').value = savedGeminiKey;
+            }
+        });
+
+        function formatCOP(amount) {
+            return '$' + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") + ' COP';
+        }
+
+        function selectPlan(planType) {
+            state.plan = planType;
+            state.basePrice = planType === 'single' ? 49900 : 89900;
+
+            const btnSingle = document.getElementById('btn-plan-single');
+            const btnCombo = document.getElementById('btn-plan-combo');
+            const subtitle = document.getElementById('dropzone-subtitle');
+
+            if (planType === 'single') {
+                btnSingle.className = "text-left p-4 rounded-xl border-2 border-charcoal bg-ice transition relative";
+                btnCombo.className = "text-left p-4 rounded-xl border-2 border-gray-200 hover:border-gray-300 bg-white transition relative";
+                subtitle.textContent = "Aceptamos documentos emitidos por la SNR (digitales o escaneados legibles).";
+                document.getElementById('snr-qty-select').value = "1";
+            } else {
+                btnCombo.className = "text-left p-4 rounded-xl border-2 border-charcoal bg-ice transition relative";
+                btnSingle.className = "text-left p-4 rounded-xl border-2 border-gray-200 hover:border-gray-300 bg-white transition relative";
+                subtitle.textContent = "Puede adjuntar hasta 3 PDFs del mismo negocio (Apartamento + Parqueadero + Cuarto Útil).";
+            }
+            updateTotal();
+        }
+
+        function toggleSnrDownload() {
+            const toggle = document.getElementById('snr-download-toggle');
+            state.snrDownload = toggle.checked;
+
+            const pdfZone = document.getElementById('pdf-upload-zone');
+            const snrZone = document.getElementById('snr-inputs-zone');
+
+            if (state.snrDownload) {
+                pdfZone.classList.add('hidden');
+                snrZone.classList.remove('hidden');
+            } else {
+                pdfZone.classList.remove('hidden');
+                snrZone.classList.add('hidden');
+            }
+            updateTotal();
+        }
+
+        function activateSnrPlan() {
+            const toggle = document.getElementById('snr-download-toggle');
+            toggle.checked = true;
+            toggleSnrDownload();
+        }
+
+        function updateTotal() {
+            state.snrQty = parseInt(document.getElementById('snr-qty-select').value || "1", 10);
+            const snrExtra = state.snrDownload ? (state.snrQty * state.snrUnitCost) : 0;
+            const total = state.basePrice + snrExtra;
+
+            const planLabel = state.plan === 'single' ? 'Estudio 1 Matrícula' : 'Combo Vivienda Completa (Hasta 3 Folios)';
+            const snrLabel = state.snrDownload ? ` + Descarga Oficial SNR (${state.snrQty} matrícula${state.snrQty > 1 ? 's' : ''})` : ' — Cliente aporta PDF';
+
+            document.getElementById('summary-line').textContent = planLabel + snrLabel;
+            document.getElementById('total-price-display').textContent = formatCOP(total);
+            document.getElementById('pse-btn-text').textContent = `Pagar por PSE y Radicar Estudio (${formatCOP(total)})`;
+        }
+
+        function handleFileUpload(files) {
+            if (!files || files.length === 0) return;
+            const names = Array.from(files).map(f => f.name).join(', ');
+            runValidationProcess(names, 'Folio SNR Verificado • Documento Legible');
+        }
+
+        function simulateInstantPdf() {
+            runValidationProcess('certificado_SNR_01N-5392988.pdf', 'ORIP Medellín Norte • Matrícula 01N-5392988');
+        }
+
+        function runValidationProcess(fileNameString, officeInfo) {
+            state.uploadedFiles = [fileNameString];
+            document.getElementById('dropzone-empty').classList.add('hidden');
+            document.getElementById('precheck-success').classList.add('hidden');
+
+            const loader = document.getElementById('precheck-loader');
+            const bar = document.getElementById('precheck-bar');
+            const statusText = document.getElementById('precheck-status-text');
+
+            loader.classList.remove('hidden');
+            bar.style.width = '25%';
+            statusText.textContent = 'Comprobando formato del Certificado de Tradición...';
+
+            setTimeout(() => {
+                bar.style.width = '68%';
+                statusText.textContent = 'Asignando número de radicado ' + state.radicadoId + '...';
+            }, 700);
+
+            setTimeout(() => {
+                bar.style.width = '100%';
+                loader.classList.add('hidden');
+                document.getElementById('uploaded-filenames').textContent = fileNameString;
+                document.getElementById('detected-office').textContent = officeInfo;
+                document.getElementById('precheck-success').classList.remove('hidden');
+            }, 1400);
+        }
+
+        function resetFileUpload(e) {
+            if (e) e.stopPropagation();
+            state.uploadedFiles = [];
+            document.getElementById('file-input').value = '';
+            document.getElementById('precheck-success').classList.add('hidden');
+            document.getElementById('dropzone-empty').classList.remove('hidden');
+        }
+
+        function switchPaymentTab(tab) {
+            const tabPse = document.getElementById('tab-pay-pse');
+            const tabTransfer = document.getElementById('tab-pay-transfer');
+            const contentPse = document.getElementById('content-pay-pse');
+            const contentTransfer = document.getElementById('content-pay-transfer');
+
+            if (tab === 'pse') {
+                tabPse.className = "py-2.5 px-3 rounded-lg text-xs sm:text-sm font-heading font-bold bg-white text-charcoal shadow-sm transition flex items-center justify-center gap-2";
+                tabTransfer.className = "py-2.5 px-3 rounded-lg text-xs sm:text-sm font-heading font-bold text-neutral-600 hover:text-charcoal transition flex items-center justify-center gap-2";
+                contentPse.classList.remove('hidden');
+                contentTransfer.classList.add('hidden');
+            } else {
+                tabTransfer.className = "py-2.5 px-3 rounded-lg text-xs sm:text-sm font-heading font-bold bg-white text-charcoal shadow-sm transition flex items-center justify-center gap-2";
+                tabPse.className = "py-2.5 px-3 rounded-lg text-xs sm:text-sm font-heading font-bold text-neutral-600 hover:text-charcoal transition flex items-center justify-center gap-2";
+                contentTransfer.classList.remove('hidden');
+                contentPse.classList.add('hidden');
+            }
+        }
+
+        function copyText(elementId) {
+            const text = document.getElementById(elementId).textContent;
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            showCustomModal(
+                'Número de Cuenta Copiado',
+                `Se ha copiado "${text}" al portapapeles. Una vez realizada la transferencia desde su aplicación bancaria, presione el botón amarillo para enviarnos el soporte por WhatsApp.`,
+                false
+            );
+        }
+
+        function submitViaWhatsAppTransfer() {
+            const name = document.getElementById('client-name').value.trim() || 'Solicitante en línea';
+            const phone = document.getElementById('client-whatsapp').value.trim() || 'Pendiente';
+            const totalText = document.getElementById('total-price-display').textContent;
+            const summaryLine = document.getElementById('summary-line').textContent;
+            const docReference = state.snrDownload
+                ? (document.getElementById('snr-matricula-input').value.trim() || 'Indicaré matrícula por este chat')
+                : (state.uploadedFiles[0] || 'Adjunto PDF en este chat');
+
+            const message = `Hola equipo jurídico de *Mi Tranquilidad (mitranquilidad.co)*.\n\n` +
+                `He radicado la siguiente solicitud de Estudio de Títulos:\n` +
+                `• *N° de Expediente:* ${state.radicadoId}\n` +
+                `• *Solicitante:* ${name} (${phone})\n` +
+                `• *Servicio:* ${summaryLine}\n` +
+                `• *Valor Total:* ${totalText}\n` +
+                `• *Folio / Archivo:* ${docReference}\n\n` +
+                `Adjunto mi comprobante de pago y el documento para iniciar el estudio jurídico.`;
+
+            const waUrl = `https://wa.me/${state.whatsappNumber}?text=${encodeURIComponent(message)}`;
+            window.open(waUrl, '_blank');
+        }
+
+        function triggerPseCheckout() {
+            const bank = document.getElementById('pse-bank').value;
+            const totalText = document.getElementById('total-price-display').textContent;
+
+            if (state.pseLink && state.pseLink.startsWith('http')) {
+                window.open(state.pseLink, '_blank');
+                return;
+            }
+
+            showCustomModal(
+                `Radicación ${state.radicadoId} Lista (${bank})`,
+                `Su solicitud por valor de ${totalText} ha sido registrada. Para completar el pago por PSE o recibir asistencia inmediata de nuestro abogado en turno, continúe en nuestra línea oficial de WhatsApp.`,
+                true
+            );
+        }
+
+        function openExpedienteChecker() {
+            showCustomModal(
+                'Consulta de Estado de Expediente',
+                `Su número de radicado actual en sesión es ${state.radicadoId}. Si ya envió su Certificado de Tradición y soporte de pago, nuestro equipo jurídico entregará el Dictamen Oficial firmado directamente en su WhatsApp en un lapso de 45 a 60 minutos.`,
+                true
+            );
+        }
+
+        function openDirectWhatsApp(customText) {
+            const waUrl = `https://wa.me/${state.whatsappNumber}?text=${encodeURIComponent(customText)}`;
+            window.open(waUrl, '_blank');
+        }
+
+        function showCustomModal(title, body, showWaBtn) {
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-body').textContent = body;
+            const btn = document.getElementById('modal-action-btn');
+            if (showWaBtn) {
+                btn.classList.remove('hidden');
+                btn.onclick = () => {
+                    closeCustomModal();
+                    submitViaWhatsAppTransfer();
+                };
+            } else {
+                btn.classList.add('hidden');
+            }
+            document.getElementById('custom-modal').classList.remove('hidden');
+        }
+
+        function closeCustomModal() {
+            document.getElementById('custom-modal').classList.add('hidden');
+        }
+
+        function togglePartnerModal() {
+            document.getElementById('partner-modal').classList.toggle('hidden');
+        }
+
+        function switchPartnerTab(tabNumber) {
+            [1, 2, 3].forEach(num => {
+                const btn = document.getElementById(`partner-tab-btn-${num}`);
+                const content = document.getElementById(`partner-tab-content-${num}`);
+                if (num === tabNumber) {
+                    btn.className = "py-2.5 px-3 rounded-lg text-xs font-heading font-bold bg-charcoal text-bankyellow shadow-sm transition flex items-center justify-center gap-2";
+                    content.classList.remove('hidden');
+                } else {
+                    btn.className = "py-2.5 px-3 rounded-lg text-xs font-heading font-bold text-charcoal hover:bg-white transition flex items-center justify-center gap-2";
+                    content.classList.add('hidden');
+                }
+            });
+        }
+
+        function savePartnerConfig() {
+            const newWa = document.getElementById('cfg-whatsapp').value.trim().replace(/\D/g, '');
+            const newBanco = document.getElementById('cfg-bancolombia').value.trim();
+            const newNequi = document.getElementById('cfg-nequi').value.trim();
+            const newPse = document.getElementById('cfg-pse-link').value.trim();
+            const newWorker = document.getElementById('cfg-worker-url').value.trim();
+            const newSecret = document.getElementById('cfg-partner-secret').value.trim();
+            const newGeminiKey = document.getElementById('cfg-gemini-key').value.trim();
+
+            if (newWa) {
+                state.whatsappNumber = newWa;
+                localStorage.setItem('mt_wa', newWa);
+            }
+            if (newBanco) {
+                document.getElementById('display-bancolombia').textContent = newBanco;
+                localStorage.setItem('mt_banco', newBanco);
+            }
+            if (newNequi) {
+                document.getElementById('display-nequi').textContent = newNequi;
+                localStorage.setItem('mt_nequi', newNequi);
+            }
+            state.pseLink = newPse;
+            localStorage.setItem('mt_pse', newPse);
+
+            state.workerUrl = newWorker;
+            localStorage.setItem('mt_worker_url', newWorker);
+
+            state.partnerSecret = newSecret;
+            localStorage.setItem('mt_partner_secret', newSecret);
+
+            state.geminiKey = newGeminiKey;
+            localStorage.setItem('mt_gemini_key', newGeminiKey);
+
+            showCustomModal(
+                'Configuración Guardada',
+                'Los datos de WhatsApp, cuentas bancarias, Cloudflare Worker y llaves se han actualizado correctamente.',
+                false
+            );
+        }
+
+        function copyWorkerCode() {
+            const code = document.getElementById('cloudflare-worker-code').textContent;
+            const tempInput = document.createElement('textarea');
+            tempInput.value = code;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            showCustomModal(
+                'Código de Cloudflare Worker Copiado',
+                'El script worker.js ha sido copiado al portapapeles. Pégalo directamente en tu panel de Cloudflare Workers.',
+                false
+            );
+        }
+
+        function fileToBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => {
+                    const base64String = reader.result.split(',')[1];
+                    resolve({
+                        name: file.name,
+                        mimeType: file.type || 'application/pdf',
+                        base64: base64String
+                    });
+                };
+                reader.onerror = reject;
+                reader.readAsDataURL(file);
+            });
+        }
+
+        async function handleMotorFiles(fileList) {
+            if (!fileList || fileList.length === 0) return;
+            const converted = [];
+            for (const file of Array.from(fileList)) {
+                const b64 = await fileToBase64(file);
+                converted.push(b64);
+            }
+            state.motorFiles = converted;
+            document.getElementById('motor-file-label').textContent =
+                `✅ ${converted.length} archivo(s) cargado(s): ` + converted.map(f => f.name).join(', ');
+        }
+
+        async function executePartnerAudit() {
+            const expId = document.getElementById('motor-exp-id').value.trim() || state.radicadoId;
+            const clientName = document.getElementById('motor-client-name').value.trim() || 'Cliente Titular';
+            const extraText = document.getElementById('motor-extra-text').value.trim();
+            const mode = document.getElementById('motor-connection-mode').value;
+
+            if (state.motorFiles.length === 0 && !extraText) {
+                showCustomModal(
+                    'Falta el Certificado de Tradición',
+                    'Por favor seleccione al menos un archivo PDF de Certificado de Tradición y Libertad o pegue el texto del certificado para iniciar la auditoría jurídica.',
+                    false
+                );
+                return;
+            }
+
+            const statusBox = document.getElementById('motor-status-box');
+            const statusMsg = document.getElementById('motor-status-msg');
+            statusBox.classList.remove('hidden');
+            statusMsg.textContent = 'Ejecutando lectura forense de anotaciones, folios y cancelaciones...';
+
+            const userPrompt = `Realiza el Estudio de Títulos oficial del expediente ${expId} para nuestro cliente ${clientName}. ${extraText ? 'Notas adicionales: ' + extraText : ''}`;
+
+            try {
+                let parsedDictamen = null;
+
+                if (mode === 'worker' && state.workerUrl) {
+                    const response = await fetch(state.workerUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-Partner-Secret': state.partnerSecret
+                        },
+                        body: JSON.stringify({
+                            prompt: userPrompt,
+                            systemPrompt: MASTER_LEGAL_SYSTEM_PROMPT,
+                            files: state.motorFiles
+                        })
+                    });
+                    parsedDictamen = await response.json();
+                } else {
+                    const activeKey = state.geminiKey || apiKey;
+                    const parts = [{ text: userPrompt }];
+                    for (const f of state.motorFiles) {
+                        parts.push({
+                            inlineData: {
+                                mimeType: f.mimeType,
+                                data: f.base64
+                            }
+                        });
+                    }
+
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${activeKey}`;
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            contents: [{ role: 'user', parts }],
+                            systemInstruction: { parts: [{ text: MASTER_LEGAL_SYSTEM_PROMPT }] },
+                            generationConfig: { responseMimeType: 'application/json' }
+                        })
+                    });
+                    const result = await response.json();
+                    const rawText = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+                    if (!rawText) {
+                        throw new Error('No se recibió respuesta del motor. Verifique su conexión o API Key en la Pestaña 2.');
+                    }
+                    parsedDictamen = JSON.parse(rawText);
+                }
+
+                renderGeneratedDictamenOnSheet(parsedDictamen, expId, clientName);
+                statusBox.classList.add('hidden');
+                togglePartnerModal();
+
+                // Desplazar suavemente hacia la hoja membretada lista para imprimir
+                document.getElementById('dictamen-ejemplo').scrollIntoView({ behavior: 'smooth' });
+            } catch (err) {
+                statusBox.classList.add('hidden');
+                showCustomModal(
+                    'Aviso del Motor Jurídico',
+                    'Detalle técnico: ' + err.message,
+                    false
+                );
+            }
+        }
+
+        function renderGeneratedDictamenOnSheet(data, expId, clientName) {
+            const sheet = document.getElementById('printable-dictamen');
+            // Actualizar tabla de propietarios
+            if (Array.isArray(data.propietarios) && data.propietarios.length > 0) {
+                const tbody = document.getElementById('dictamen-owners-tbody');
+                tbody.innerHTML = data.propietarios.map(p => `
+                    <tr>
+                        <td class="py-3 px-4 font-bold text-charcoal">${p.nombre || ''}</td>
+                        <td class="py-3 px-4 font-mono">${p.documento || ''}</td>
+                        <td class="py-3 px-4"><span class="px-2 py-0.5 rounded bg-bankgreen-soft text-bankgreen font-bold">${p.calidad || 'Titular (X)'}</span></td>
+                        <td class="py-3 px-4 font-bold text-bankgreen">${p.debeFirmar || 'SÍ'}</td>
+                    </tr>
+                `).join('');
+            }
+
+            if (data.notaAdquisicion) {
+                document.getElementById('dictamen-acquisition-note').innerHTML = `* <strong>Modo de adquisición:</strong> ${data.notaAdquisicion}`;
+            }
+
+            if (Array.isArray(data.cargas) && data.cargas.length > 0) {
+                const cargasContainer = document.getElementById('dictamen-cargas-list');
+                cargasContainer.innerHTML = data.cargas.map(c => `
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between p-3.5 rounded-xl bg-ice border border-gray-200 gap-2">
+                        <div>
+                            <span class="font-bold text-charcoal">${c.titulo || ''}:</span>
+                            <p class="text-neutral-600 mt-0.5">${c.detalle || ''}</p>
+                        </div>
+                        <span class="shrink-0 px-3 py-1 rounded-full bg-bankgreen-soft text-bankgreen font-bold text-[11px] border border-bankgreen/20">
+                            ${c.estado || 'Verificado'}
+                        </span>
+                    </div>
+                `).join('');
+            }
+
+            if (Array.isArray(data.recomendaciones) && data.recomendaciones.length > 0) {
+                const recList = document.getElementById('dictamen-recommendations-list');
+                recList.innerHTML = data.recomendaciones.map(r => `<li>${r}</li>`).join('');
+            }
+
+            document.getElementById('dictamen-client-footer').textContent =
+                `Solicitante: ${clientName} • Expediente ${expId} • Verificación sobre folio SNR.`;
+            document.getElementById('dictamen-date-footer').textContent =
+                `Fecha de Emisión: ${new Date().toLocaleDateString('es-CO', { year: 'numeric', month: 'long', day: 'numeric' })}`;
+
+            // Permitir edición directa con un clic en toda la hoja membretada
+            sheet.setAttribute('contenteditable', 'true');
+        }
+
+        function enableDictamenManualEdit() {
+            const sheet = document.getElementById('printable-dictamen');
+            sheet.setAttribute('contenteditable', 'true');
+            togglePartnerModal();
+            document.getElementById('dictamen-ejemplo').scrollIntoView({ behavior: 'smooth' });
+            showCustomModal(
+                'Modo Edición Manual Activado',
+                'Ahora puedes hacer clic sobre cualquier texto, nombre o párrafo de la Hoja Oficial Membretada para ajustarlo antes de darle a "Imprimir / Ver formato PDF".',
+                false
+            );
+        }
+
+        function printGeneratedDictamen() {
+            togglePartnerModal();
+            setTimeout(() => {
+                window.print();
+            }, 250);
+        }
+    </script>
+</body>
+</html>
